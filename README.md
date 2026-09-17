@@ -4,9 +4,9 @@
 
 ---
 
-# 📌 Project Overview
+## 📌 Project Overview
 
-This project demonstrates the design and implementation of a **modern data warehouse** using Medallion Architecture, following real-world data engineering workflows. It covers the full lifecycle of data — from source ingestion through transformation to analytics-ready datasets — structured across the classic **Bronze → Silver → Gold** layered architecture.
+**This project demonstrates the design and implementation of a **modern data warehouse** using Medallion Architecture, following real-world data engineering workflows. It covers the full lifecycle of data — from source ingestion through transformation to analytics-ready datasets — structured across the classic **Bronze → Silver → Gold** layered architecture**.
 ---
 
 ## 🎯 Objectives
@@ -20,30 +20,9 @@ This project demonstrates the design and implementation of a **modern data wareh
 
 ## 🏛️ Architecture
 
-```
-┌─────────────────────────────────────────────────────────┐
-│                    DATA SOURCES                         │
-│            (CSV Files / ERP & CRM Systems)              │
-└───────────────────────┬─────────────────────────────────┘
-                        │
-                        ▼
-┌─────────────────────────────────────────────────────────┐
-│                  BRONZE LAYER                           │
-│         Raw ingestion — data loaded as-is               │
-└───────────────────────┬─────────────────────────────────┘
-                        │
-                        ▼
-┌─────────────────────────────────────────────────────────┐
-│                  SILVER LAYER                           │
-│     Cleansed, standardised, and validated data          │
-└───────────────────────┬─────────────────────────────────┘
-                        │
-                        ▼
-┌─────────────────────────────────────────────────────────┐
-│                   GOLD LAYER                            │
-│     Business-ready dimensional models & aggregates      │
-└─────────────────────────────────────────────────────────┘
-```
+![Data Warehouse Architecture](docs/data_architecture.svg)
+
+> The architecture follows a **Medallion pattern** — data flows from raw Sources through the Bronze, Silver, and Gold layers into consumer-ready outputs.
 
 ---
 
@@ -166,6 +145,7 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 ---
 
 ## 🙏 Acknowledgements
+
 - The broader data engineering and SQL community
 
 ---
