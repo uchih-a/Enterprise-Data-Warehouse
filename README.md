@@ -6,7 +6,7 @@
 
 # 📌 Project Overview
 
-This project demonstrates the design and implementation of a **modern data warehouse** using SQL, following real-world data engineering workflows. It covers the full lifecycle of data — from source ingestion through transformation to analytics-ready datasets — structured across the classic **Bronze → Silver → Gold** layered architecture.
+This project demonstrates the design and implementation of a **modern data warehouse** using Medallion Architecture, following real-world data engineering workflows. It covers the full lifecycle of data — from source ingestion through transformation to analytics-ready datasets — structured across the classic **Bronze → Silver → Gold** layered architecture.
 ---
 
 ## 🎯 Objectives
