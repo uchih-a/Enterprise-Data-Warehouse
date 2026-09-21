@@ -1,4 +1,4 @@
-cst_id,cst_key,cst_firstname,cst_lastname,cst_marital_status,cst_gndr,cst_create_date
+cust_id,cust_key,cust_firstname,cust_lastname,cust_marital_status,cust_gndr,cust_create_date
 11000,AW00011000, Jon,Yang ,M,M,2025-10-06
 11001,AW00011001,Eugene,Huang  ,S,M,2025-10-06
 11002,AW00011002,Ruben, Torres,M,M,2025-10-06
