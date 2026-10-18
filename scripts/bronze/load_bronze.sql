@@ -6,7 +6,7 @@ Purpose  : Full reload of all Bronze source tables
 Sources  : CRM  → /var/opt/mssql/data/source_crm/
            ERP  → /var/opt/mssql/data/source_erp/
 Pattern  : TRUNCATE → BULK INSERT per table
-Author   : <your name>
+Author   : Mutsala
 =============================================================
 */
 
