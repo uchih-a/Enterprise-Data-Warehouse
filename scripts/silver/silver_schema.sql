@@ -85,35 +85,53 @@ GO
 
 /* CRM PRODUCT INFORMATION */
 
+
+/* CRM PRODUCT INFORMATION */
+
 IF OBJECT_ID('Silver.crm_prod_info', 'U') IS NOT NULL
     DROP TABLE Silver.crm_prod_info;
 GO
 
 CREATE TABLE Silver.crm_prod_info
 (
-    prod_id         INT,
-    prod_key        NVARCHAR(50),
-    prod_name       NVARCHAR(50),
-    prod_cost       DECIMAL(10,2),
-    prod_line       NVARCHAR(50),
-    prod_start_date DATE,
-    prod_end_date   DATE,
+    prod_id             INT             NOT NULL,
+    category_id         NVARCHAR(50)    NOT NULL,
+    product_key         NVARCHAR(50)    NOT NULL,
+    product_name        NVARCHAR(255)   NULL,
+    product_cost        DECIMAL(10,2)   NOT NULL,
+    product_line        NVARCHAR(50)    NOT NULL,
+    product_start_date  DATE            NOT NULL,
+    product_end_date    DATE            NULL,
 
     -- Silver processing metadata
-    dwh_create_date DATETIME2(3)
+    dwh_create_date     DATETIME2(3)
         NOT NULL
         DEFAULT SYSUTCDATETIME(),
 
-    dwh_update_date DATETIME2(3)
+    dwh_update_date     DATETIME2(3)
         NOT NULL
         DEFAULT SYSUTCDATETIME(),
 
-    dwh_source      NVARCHAR(50)
+    dwh_source          NVARCHAR(50)
         NOT NULL,
 
-    dwh_batch_id    BIGINT
+    dwh_batch_id        BIGINT,
+
+    -- Data quality constraints
+    CONSTRAINT PK_Silver_crm_prod_info
+        PRIMARY KEY (prod_id),
+
+    CONSTRAINT CK_Silver_crm_prod_info_cost
+        CHECK (product_cost >= 0),
+
+    CONSTRAINT CK_Silver_crm_prod_info_dates
+        CHECK (
+            product_end_date IS NULL
+            OR product_end_date >= product_start_date
+        )
 );
 GO
+
 
 
 /* CRM SALES INFORMATION */
@@ -127,9 +145,9 @@ CREATE TABLE Silver.crm_sales_details
     sale_ord_num   NVARCHAR(50),
     sale_prd_key   NVARCHAR(50),
     sale_cust_id   INT,
-    sale_ord_date  INT,
-    sale_ship_date INT,
-    sale_due_date  INT,
+    sale_ord_date  DATE,
+    sale_ship_date DATE,
+    sale_due_date  DATE,
     sale_sales     DECIMAL(10,2),
     sale_quantity  INT,
     sale_price     DECIMAL(10,2),

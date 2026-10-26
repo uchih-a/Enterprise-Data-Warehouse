@@ -1,7 +1,7 @@
 /* ============================================================================
    Project       : Data Warehouse
    Database      : DataWarehouse
-   Author        : <Your Name>
+   Author        : Mutsala
    Description   : Initializes the Data Warehouse database and schemas.
    
    Architecture:

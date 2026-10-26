@@ -41,7 +41,7 @@ SELECT DISTINCT
 INTO #DistinctCustomers
 FROM Bronze.crm_cust_info;
 
-
+SELECT * FROM #DistinctCustomers
 /*=============================================================
   2. CLASSIFY CUSTOMER IDS
 =============================================================*/
@@ -52,9 +52,10 @@ SELECT
 INTO #CustomerQuality
 FROM #DistinctCustomers
 WHERE cust_id IS NOT NULL
-GROUP BY cust_id;
+GROUP BY cust_id
+HAVING COUNT(*) > 1;
 
-
+SELECT * FROM #CustomerQuality
 /*=============================================================
   3. REPORT EXACT DUPLICATES REMOVED
 =============================================================*/
