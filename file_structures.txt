@@ -34,3 +34,251 @@
 └── tests
 
 14 directories, 20 files
+.
+├── datasets
+│   ├── source_crm
+│   │   ├── cust_info.csv
+│   │   ├── prd_info.csv
+│   │   └── sales_details.csv
+│   └── source_erp
+│       ├── CUST_AZ12.csv
+│       ├── LOC_A101.csv
+│       └── PX_CAT_G1V2.csv
+├── docs
+├── file_structures.txt
+├── .git
+│   ├── COMMIT_EDITMSG
+│   ├── config
+│   ├── description
+│   ├── FETCH_HEAD
+│   ├── HEAD
+│   ├── hooks
+│   │   ├── applypatch-msg.sample
+│   │   ├── commit-msg.sample
+│   │   ├── fsmonitor-watchman.sample
+│   │   ├── post-update.sample
+│   │   ├── pre-applypatch.sample
+│   │   ├── pre-commit.sample
+│   │   ├── pre-merge-commit.sample
+│   │   ├── prepare-commit-msg.sample
+│   │   ├── pre-push.sample
+│   │   ├── pre-rebase.sample
+│   │   ├── pre-receive.sample
+│   │   ├── push-to-checkout.sample
+│   │   ├── sendemail-validate.sample
+│   │   └── update.sample
+│   ├── index
+│   ├── info
+│   │   └── exclude
+│   ├── logs
+│   │   ├── HEAD
+│   │   └── refs
+│   │       ├── heads
+│   │       │   └── main
+│   │       └── remotes
+│   │           └── origin
+│   │               ├── HEAD
+│   │               └── main
+│   ├── objects
+│   │   ├── 00
+│   │   │   └── 3b822cd65b98be13f032cb829a2822720467a1
+│   │   ├── 02
+│   │   │   └── ff814d704735411ea744bf22024f112f6d6354
+│   │   ├── 05
+│   │   │   └── 44e8d20930d80be1d56b04bbd0f78aa007f621
+│   │   ├── 06
+│   │   │   ├── 17b951b3b1bf40554cc234339bc6b7ad93b740
+│   │   │   └── 2f2257f298be40a217f0856a1e9e1f53886920
+│   │   ├── 12
+│   │   │   ├── bae50da6ffa8a1a29827347ba8247a87039186
+│   │   │   └── cbffb9071a7c7db792a4691e8e73131749e0be
+│   │   ├── 16
+│   │   │   └── 00356ac534fa28265da1c3a5d99faf4a1649df
+│   │   ├── 17
+│   │   │   └── ea1930ac2054de827f76322a70e09b4fb3b246
+│   │   ├── 1a
+│   │   │   └── 5d4cd55d55f69e30b2b9b58ad28d5310be213d
+│   │   ├── 1d
+│   │   │   └── be04db8b3674742697f47433c24347d6dd71f9
+│   │   ├── 1e
+│   │   │   ├── b76c18895f0c9870fde5953cb59ced119f90fc
+│   │   │   └── c3c4f73d82253b0844bedf6fe68ba4139a7f09
+│   │   ├── 21
+│   │   │   └── f1ed6d0426344be82f3cec06db9baf1da3f0fa
+│   │   ├── 25
+│   │   │   ├── e1d81be341959b6191d3d903c6f56118b0998c
+│   │   │   └── ef9aecddc933509c5f9be0746d1214579d2751
+│   │   ├── 2a
+│   │   │   └── 11affb192ccdae856c8422f0e1a67df28c6aa8
+│   │   ├── 2b
+│   │   │   └── df49de09e465c12d554c54eea7ecffe20f6e34
+│   │   ├── 30
+│   │   │   └── b7a5649c8ff25b5fa3dd2a97eb54420b107522
+│   │   ├── 34
+│   │   │   ├── 6506f23db4783c47aef17942b035af75399e31
+│   │   │   ├── eed29244c89041411e0f487171c89c3c670064
+│   │   │   └── f7926de6404bf82860abd90c39f6566c402f41
+│   │   ├── 35
+│   │   │   ├── 4f201ade6446c044ac7d224a748cd72ac0bc8d
+│   │   │   └── cd39d4a79e46c63a83d1965ebd1c25a75b16a2
+│   │   ├── 3c
+│   │   │   └── 808507f26ffcb2c9bb2a5c9025125c0eefc6c1
+│   │   ├── 3d
+│   │   │   └── 17172861175e5abbbcdaeb7763197d227e1cda
+│   │   ├── 3f
+│   │   │   └── 6ead290b6cc2a86be5bc802d2c6167d1a26f4c
+│   │   ├── 40
+│   │   │   └── 6f5cd1296a2312de68f3c5641f61522c17e032
+│   │   ├── 41
+│   │   │   └── 34baed561f540c46e55e1bf22bc57dc6482679
+│   │   ├── 42
+│   │   │   └── 6c74b4481abbf814eb038ff4eb634d0ee8e214
+│   │   ├── 43
+│   │   │   └── 33808e2d5ec97de62a8cea8cb3dceffa0c326c
+│   │   ├── 4b
+│   │   │   └── 445544c36527cd00f94d946b195ff31c9e3a74
+│   │   ├── 4f
+│   │   │   └── 00c185f27474061ad482a849eb9d8af04d38b7
+│   │   ├── 55
+│   │   │   └── eeb0cf130851ec30272c96be8909a1b738a447
+│   │   ├── 59
+│   │   │   └── 6778c3763c01aabacc0952de802f71fceb0ec5
+│   │   ├── 5d
+│   │   │   └── 58c96c21fe3e8a43d01bde459c53e338c45b9b
+│   │   ├── 5f
+│   │   │   └── 0e329fdaf67cb2263862dbfbea581e1be9b876
+│   │   ├── 61
+│   │   │   └── 33c0217127bb35164e25b105f5b09eca7ffbfd
+│   │   ├── 65
+│   │   │   └── ffba0a59d81ff5a9e12ade83684ae9c4f4418d
+│   │   ├── 69
+│   │   │   └── 350c2184fecd0e5deb986118fcc5cd437fb2b1
+│   │   ├── 6f
+│   │   │   └── 6e34cc7933c12336a061f0d1635a36451f21bc
+│   │   ├── 70
+│   │   │   └── d2b9cd76a34118b265fb94c2518bde02df2fda
+│   │   ├── 72
+│   │   │   └── 26adc0e302081f06b259a550e28490e7731aa7
+│   │   ├── 79
+│   │   │   └── a17b8a692efeeb8554d5124204c737b33ae64d
+│   │   ├── 7a
+│   │   │   └── 31342279991e4f8c43207aeafdd5d9db0ea2e6
+│   │   ├── 7c
+│   │   │   ├── 0c257a7193e442550203b3e0a1a778099402af
+│   │   │   └── d8a7663f6285f205e48b616e89ab6fb6f0b484
+│   │   ├── 86
+│   │   │   └── b9bb3c90f6cea930ee02ad7122cf709d68b53f
+│   │   ├── 87
+│   │   │   └── fd6ed533bdbe851c2a93f8015fe962f7ffaa19
+│   │   ├── 88
+│   │   │   ├── 8dc1fd9964565c52aba79fe0b563a83b0ab56b
+│   │   │   └── 9b0f0f2b28d7fc040a783479c2d4c2a969b514
+│   │   ├── 8c
+│   │   │   └── ac624ef8b21c03acadb05644db38bc21b6300e
+│   │   ├── 8e
+│   │   │   └── cd708efe45a44fdfb3d0ede85cfb7469cf41fe
+│   │   ├── 90
+│   │   │   └── 3a35aae50b3f0a0c6fe1404c8a7d430690a3c8
+│   │   ├── 96
+│   │   │   └── 25497dc4d42f5ce4d83a7d41d3e9c7c1ce09ce
+│   │   ├── 98
+│   │   │   └── 494def5ba9d4aaa65c04f52a8ae0bd244f7f83
+│   │   ├── 99
+│   │   │   └── 2d3e2a8df263e6c2082981b88788c4c317be7d
+│   │   ├── 9a
+│   │   │   └── fae63181029827da492fcac69fa19f09d2e5b0
+│   │   ├── 9c
+│   │   │   └── e99063a1f6d44ed6be42b7f453370a761cf1f2
+│   │   ├── a1
+│   │   │   └── e3ad6eda06d084e42dc3460b1e7a55e9dd95a6
+│   │   ├── a6
+│   │   │   ├── 1449b573081861b87f7cbf99ef1ccb0ea6eab8
+│   │   │   ├── d7d495a1127d493c34532be3c35fc6f71d1b0f
+│   │   │   └── f032e04d1bd2ad111b0c2cd6a1c7c621a6916b
+│   │   ├── a9
+│   │   │   └── c70daa73e04e620aef2a7d1857afdf2a247763
+│   │   ├── b2
+│   │   │   └── 1304253272397d6e493ff60c3fde11e685f2bb
+│   │   ├── b4
+│   │   │   └── 114d21e19906e61bcc96aa7fb41781b20decff
+│   │   ├── b7
+│   │   │   └── 1212ddd84d1da433895679253223bce167cd99
+│   │   ├── ba
+│   │   │   └── 9a5457f8885711d5a765e7f3a91585b0e3e61b
+│   │   ├── bc
+│   │   │   ├── 031b7528e0b418eb959bf2482866be4d55c0a3
+│   │   │   └── 37897142fefed4b1e548b2a3ee2809b43bcc62
+│   │   ├── bf
+│   │   │   └── adc675cbdfe79e6d181e0dcc588d50b98cf1cb
+│   │   ├── c4
+│   │   │   ├── 193eebf1c887f626564961e5c12bf51f0688fe
+│   │   │   └── 6da61c2c740d908781032e9e245b958a98eb1e
+│   │   ├── cf
+│   │   │   └── 584e305aa676c6346f2ee91fa7815c4868dc1c
+│   │   ├── d0
+│   │   │   └── 3407b5e73be8025084fa664669814b2839f5f1
+│   │   ├── d3
+│   │   │   └── a398d80150a5d09d030fff93e24bed71768c8f
+│   │   ├── d4
+│   │   │   └── e3d1dbfae573fb5125529e3ffaacbcaa69805b
+│   │   ├── d5
+│   │   │   ├── 294b3c08069b12bb4deafb436f4b6dcf46c4dd
+│   │   │   ├── 2efc505763ede24dc7d4960e32ef0147195052
+│   │   │   └── 4959d4ff4e413d0fd114332225e4f34a51da44
+│   │   ├── d6
+│   │   │   ├── 67853b668c6fdfdbc7ae32caf0eda5dcb99ae7
+│   │   │   └── 77ddd3c63791060f67910af27d1388756b5866
+│   │   ├── d9
+│   │   │   └── 6a201a52862e945f3683955298895ad8df4758
+│   │   ├── e4
+│   │   │   └── e15631c046c7ebab184d8021e90c6c91da85aa
+│   │   ├── e6
+│   │   │   └── 9de29bb2d1d6434b8b29ae775ad8c2e48c5391
+│   │   ├── e8
+│   │   │   └── fe1e2281bc8e35678524e9cad88ac392ce3eee
+│   │   ├── ec
+│   │   │   └── 2494e3a12c8f3010352471e4223422848bbe28
+│   │   ├── f2
+│   │   │   └── e8a065c2e461663cac8b239349f1528c596269
+│   │   ├── f4
+│   │   │   └── cc680acdd02a8d3022cd29d3bdab1cf9c6e4cd
+│   │   ├── f6
+│   │   │   └── 705ccd98ef795eb5dd9ef81027ca146ce934f7
+│   │   ├── f9
+│   │   │   └── 000dcd6f0ed92df7c810921c6cde1bf4bd3ae4
+│   │   ├── fa
+│   │   │   └── 901efc4e7b0c09847fb1173d3d7533f695209b
+│   │   ├── fe
+│   │   │   └── 56f493606e169354f2a66909d8ff156907de7e
+│   │   ├── ff
+│   │   │   └── c12556f67ae9787e4be655968d086bc33f538f
+│   │   ├── info
+│   │   └── pack
+│   ├── ORIG_HEAD
+│   └── refs
+│       ├── heads
+│       │   └── main
+│       ├── remotes
+│       │   └── origin
+│       │       ├── HEAD
+│       │       └── main
+│       └── tags
+├── README.md
+├── scripts
+│   ├── bronze
+│   │   ├── bronze_schema.sql
+│   │   └── load_bronze.sql
+│   ├── gold
+│   ├── init_database.sql
+│   └── silver
+│       ├── load_scripts
+│       │   ├── load_silver_crm_customer.sql
+│       │   ├── load_silver_crm_product.sql
+│       │   ├── load_silver_crm_sales.sql
+│       │   ├── load_silver_erp_cust_info.sql
+│       │   ├── load_silver_erp_loc.sql
+│       │   └── load_silver_erp_product.sql
+│       └── silver_schema.sql
+└── tests
+
+105 directories, 141 files
