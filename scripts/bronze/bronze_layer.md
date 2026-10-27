@@ -153,7 +153,7 @@ Every step follows the same pattern:
 
 ## Load Flow
 
-![Bronze load flow](images/b1-bronze-load-flow.png)
+![Bronze load flow](../../docs/images/b1-bronze-load-flow.jpg)
 
 *Diagram B1: what happens for each table, including the success and failure paths. [Open in Miro](https://miro.com/app/board/uXjVEVWjsCo=/).*
 
@@ -174,7 +174,7 @@ flowchart TD
 
 ## Request Flow
 
-![Bronze request flow](images/b2-bronze-request-flow.png)
+![Bronze request flow](../../docs/images/b2-bronze-request-flow.jpg)
 
 *Diagram B2: who does what when a single table is loaded.*
 
