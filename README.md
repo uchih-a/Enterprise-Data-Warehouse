@@ -156,7 +156,7 @@ Enterprise-Data-Warehouse/
 - Wraps each table load in `TRY / CATCH`, reports duration, and finishes with a row-count audit.
 - Keeps source date values for sales as integers (`YYYYMMDD`).
 
-Full detail: [docs/bronze_layer.md](docs/bronze_layer.md)
+Full detail: [scripts/bronze/bronze_layer.md](scripts/bronze/bronze_layer.md)
 
 ### Silver: cleaned data
 
@@ -171,7 +171,7 @@ Every Silver table carries audit metadata (`dwh_create_date`, `dwh_update_date`,
 | `erp_loc_demo` | Removes hyphens from IDs, strips CR / LF, standardises country names |
 | `erp_prod_demo` | Strips CR / LF, converts blanks to `n/a` |
 
-Full detail: [docs/silver_layer.md](docs/silver_layer.md)
+Full detail: [scripts/silver/silver_layer.md](scripts/silver/silver_layer.md)
 
 ### Gold: business-ready data
 
@@ -224,6 +224,6 @@ These are documented openly so that nobody is surprised by them.
 
 | Document | Contents |
 |----------|----------|
-| [Bronze layer](docs/bronze_layer.md) | Purpose, tables, load flow |
-| [Silver layer](docs/silver_layer.md) | Transformations and quality rules per table |
+| [Bronze layer](scripts/bronze/bronze_layer.md) | Purpose, tables, load flow |
+| [Silver layer](scripts/silver/silver_layer.md) | Transformations and quality rules per table |
 | [Miro board](https://miro.com/app/board/uXjVEVWjsCo=/) | Editable architecture diagrams |
