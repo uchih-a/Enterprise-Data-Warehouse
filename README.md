@@ -38,7 +38,7 @@ Source systems rarely agree with each other. Customer codes differ between the C
 
 ## Architecture
 
-![End-to-end architecture](docs/images/01-End-to-end-architecture.jpg)
+![End-to-end architecture](docs/images/1-End-to-end-architecture.jpg)
 
 *Diagram 1: End-to-end architecture. [Open the editable version in Miro](https://miro.com/app/board/uXjVEVWjsCo=/).*
 
@@ -88,7 +88,7 @@ Source files are read from `/var/opt/mssql/data/source_crm/` and `/var/opt/mssql
 
 ## Data Lineage
 
-![Table-level data lineage](docs/images/02-Table-level-data-lineage.jpg)
+![Table-level data lineage](docs/images/2-Table-level-data-lineage.jpg)
 
 *Diagram 2: Table-level lineage. Solid arrows show data flow. Dashed arrows show reference checks made during the Silver load.*
 
@@ -126,7 +126,7 @@ Enterprise-Data-Warehouse/
 
 ## Execution Order
 
-![Script execution order](docs/images/03-Script-execution-order.jpg)
+![Script execution order](docs/images/3-Script-execution-order.jpg)
 
 *Diagram 3: Script execution order.*
 
